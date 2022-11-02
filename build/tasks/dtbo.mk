@@ -18,8 +18,5 @@ define build-dtboimage-target
     $(hide) chmod a+r $@
 endef
 
-$(BOARD_PREBUILT_DTBOIMAGE): $(MKDTIMG) $(INSTALLED_KERNEL_TARGET)
-	$(build-dtboimage-target)
-
 endif # BOARD_KERNEL_SEPARATED_DTBO
 endif # TARGET_NO_KERNEL
